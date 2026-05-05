@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yoshika Verma — AI & Data Engineer</title>
+  <meta name="description" content="Portfolio of Yoshika Verma — AI & Data Engineering specialist. Building intelligent systems with Python, ML, and cloud technologies." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <div id="cursor-glow" aria-hidden="true"></div>
+  <div id="film-grain" aria-hidden="true"></div>
+  <canvas id="grid-bg" aria-hidden="true"></canvas>
+
+  <!-- NAV -->
+  <nav id="main-nav">
+    <a href="#hero" class="nav-logo">YV.dev</a>
+    <div class="nav-links">
+      <a href="#about"      class="nav-link" data-section="about">About</a>
+      <a href="#experience" class="nav-link" data-section="experience">Experience</a>
+      <a href="#projects"   class="nav-link" data-section="projects">Projects</a>
+      <a href="#skills"     class="nav-link" data-section="skills">Skills</a>
+      <a href="#contact"    class="nav-link" data-section="contact">Contact</a>
+    </div>
+    <div class="nav-actions">
+      <div class="nav-status">
+        <span class="status-dot"></span>
+        <span class="status-text">Open to work</span>
+      </div>
+      <a href="#" class="btn-resume" id="btn-resume" download>
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        Resume
+      </a>
+    </div>
+  </nav>
+
+  <!-- ═══ HERO ═══ -->
+  <section id="hero">
+    <canvas id="particle-canvas" aria-hidden="true"></canvas>
+    <div class="hero-scan-line" aria-hidden="true"></div>
+
+    <div class="hero-content">
+      <div class="hero-tag">
+        <span class="hero-tag-dot"></span>
+        <span class="hero-tag-text">AI &amp; Data Engineering · New Delhi, India</span>
+      </div>
+
+      <h1 class="hero-name">
+        <span class="hero-name-line"><span class="hero-name-word">Yoshika</span></span>
+        <span class="hero-name-line"><span class="hero-name-word">Verma</span></span>
+      </h1>
+
+      <p class="hero-subtitle">
+        <span id="hero-typed"></span><span class="hero-cursor">|</span>
+      </p>
+
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <span class="hero-stat-number" data-count="3">0</span>
+          <span class="hero-stat-label">Research Internships</span>
+        </div>
+        <div class="hero-stat">
+          <span class="hero-stat-number" data-count="6">0</span>
+          <span class="hero-stat-label">Major Projects</span>
+        </div>
+        <div class="hero-stat">
+          <span class="hero-stat-number" data-count="100" data-suffix="K+">0</span>
+          <span class="hero-stat-label">Users Impacted</span>
+        </div>
+        <div class="hero-stat">
+          <span class="hero-stat-number" data-count="94" data-suffix="%">0</span>
+          <span class="hero-stat-label">ML Accuracy</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-indicator" id="scroll-indicator">
+      <div class="scroll-indicator-line"></div>
+      <span class="scroll-indicator-text">Scroll</span>
+    </div>
+  </section>
+
+  <!-- ═══ ABOUT ═══ -->
+  <section id="about" class="section">
+    <div class="section-container">
+      <div class="section-label" data-animate="reveal">
+        <span class="section-label-number">01</span>
+        <span class="section-label-line"></span>
+        <span class="section-label-text">About</span>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-image-col" data-animate="reveal">
+          <div class="about-image-frame">
+            <img id="about-photo" src="" alt="Yoshika Verma" class="about-photo" />
+            <div class="about-image-overlay"></div>
+            <div class="about-image-corner"><span>yoshika_verma.jpg</span></div>
+          </div>
+          <div class="about-badges">
+            <span class="about-badge">NIT Jalandhar</span>
+            <span class="about-badge">B.Tech '26</span>
+          </div>
+        </div>
+
+        <div class="about-text-col">
+          <h2 class="about-heading" data-animate="reveal">
+            Biotech-trained engineer building<br/>
+            <span class="text-accent">AI systems at production scale.</span>
+          </h2>
+
+          <p class="about-description" data-animate="reveal">
+            My path is unconventional — a <strong>Biotechnology major at NIT Jalandhar</strong> who pivoted deep into AI and Data Engineering. That background is a feature, not a bug. I apply <strong>statistical rigour and systems thinking</strong> from life sciences to build ML models and data pipelines that are robust, interpretable, and production-ready.
+          </p>
+          <p class="about-description" data-animate="reveal">
+            I've interned at <strong>ISI Kolkata</strong> (federated learning research) and <strong>IIT Jammu</strong> (biostatistical ML), and am currently at <strong>NEETprep, New Delhi</strong> — architecting data infrastructure, A/B testing platforms, and AI engagement systems that serve <strong>100K+ active learners</strong>.
+          </p>
+
+          <div class="about-metrics" data-animate="reveal">
+            <div class="about-metric">
+              <span class="about-metric-value">100K+</span>
+              <span class="about-metric-label">Users Served</span>
+            </div>
+            <div class="about-metric">
+              <span class="about-metric-value">3</span>
+              <span class="about-metric-label">IIT/ISI Internships</span>
+            </div>
+            <div class="about-metric">
+              <span class="about-metric-value">94%</span>
+              <span class="about-metric-label">ML Accuracy</span>
+            </div>
+          </div>
+
+          <div class="about-details" data-animate="reveal">
+            <div class="about-detail">
+              <span class="about-detail-label">Education</span>
+              <span class="about-detail-value">B.Tech Biotechnology, NIT Jalandhar</span>
+            </div>
+            <div class="about-detail">
+              <span class="about-detail-label">Current Role</span>
+              <span class="about-detail-value">AI & Data Intern · NEETprep, New Delhi</span>
+            </div>
+            <div class="about-detail">
+              <span class="about-detail-label">Focus Areas</span>
+              <span class="about-detail-value">MLOps · Data Pipelines · Cloud Engineering</span>
+            </div>
+            <div class="about-detail">
+              <span class="about-detail-label">Stack</span>
+              <span class="about-detail-value">Python · SQL · Cloudflare · Next.js · PyTorch</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ EXPERIENCE ═══ -->
+  <section id="experience" class="section">
+    <div class="section-container">
+      <div class="section-label" data-animate="reveal">
+        <span class="section-label-number">02</span>
+        <span class="section-label-line"></span>
+        <span class="section-label-text">Experience</span>
+      </div>
+      <h2 class="section-heading" data-animate="reveal">
+        Where I made <span class="text-accent">measurable impact</span>
+      </h2>
+
+      <!-- Impact Strip -->
+      <div class="impact-strip" data-animate="reveal">
+        <div class="impact-cell">
+          <span class="impact-cell-value">100K+</span>
+          <span class="impact-cell-label">Learner records migrated</span>
+        </div>
+        <div class="impact-cell">
+          <span class="impact-cell-value">8</span>
+          <span class="impact-cell-label">AI personas deployed</span>
+        </div>
+        <div class="impact-cell">
+          <span class="impact-cell-value">80%</span>
+          <span class="impact-cell-label">Report automation rate</span>
+        </div>
+        <div class="impact-cell">
+          <span class="impact-cell-value">94%</span>
+          <span class="impact-cell-label">Diabetes predictor accuracy</span>
+        </div>
+      </div>
+
+      <div class="timeline">
+
+        <!-- NEETprep -->
+        <div class="timeline-item" data-animate="timeline">
+          <div class="timeline-dot">
+            <div class="timeline-dot-inner"></div>
+            <div class="timeline-dot-pulse"></div>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-card-header">
+              <div>
+                <span class="timeline-date">Jan 2026 — Present</span>
+                <h3 class="timeline-role">AI &amp; Data Engineering Intern</h3>
+                <span class="timeline-company">NEETprep · New Delhi</span>
+              </div>
+              <div class="timeline-card-badge current">Current</div>
+            </div>
+            <ul class="timeline-details">
+              <li>Architected and deployed a full <strong>A/B testing platform</strong> on <em>Cloudflare Workers</em>, enabling live variant experiments on topper cards — driving measurable uplift in click-through rates across <strong>100K+ learner sessions</strong></li>
+              <li>Built a <strong>Reddit AI persona system</strong> — deployed <strong>8 distinct Hinglish AI personas</strong> across NEET-focused subreddits using <em>Gemini API</em>, handling organic community engagement and doubt resolution at scale with zero manual moderation overhead</li>
+              <li>Designed the <strong>CleverTap data migration pipeline</strong> — automated ETL from <em>HubSpot CRM</em>, migrating <strong>100K+ user records</strong> with deduplication and enrichment, reducing what was a 2-week manual process to under 4 hours</li>
+              <li>Built a <strong>Telegram referral bot</strong> with reward tracking, PDF gating, and admin analytics — grew referral channel registrations by automating the full funnel</li>
+              <li>Automated <strong>e-commerce settlement reconciliation</strong> (Amazon + Flipkart → Tally Prime) saving the accounts team <strong>~12 hours/week</strong> of manual data entry</li>
+            </ul>
+            <div class="timeline-tags">
+              <span class="tag">Python</span>
+              <span class="tag">Cloudflare Workers</span>
+              <span class="tag">Next.js</span>
+              <span class="tag">D1 Database</span>
+              <span class="tag">Gemini API</span>
+              <span class="tag">HubSpot API</span>
+              <span class="tag">CleverTap</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ISI Kolkata -->
+        <div class="timeline-item" data-animate="timeline">
+          <div class="timeline-dot"><div class="timeline-dot-inner"></div></div>
+          <div class="timeline-card">
+            <div class="timeline-card-header">
+              <div>
+                <span class="timeline-date">Jun — Jul 2025</span>
+                <h3 class="timeline-role">Data Science Research Intern</h3>
+                <span class="timeline-company">Indian Statistical Institute · Kolkata</span>
+              </div>
+              <div class="timeline-card-badge research">Research</div>
+            </div>
+            <ul class="timeline-details">
+              <li>Researched <strong>Federated Learning</strong> frameworks for privacy-preserving distributed ML — studied gradient aggregation strategies (FedAvg, FedProx) under non-IID data conditions</li>
+              <li>Implemented <strong>differential privacy</strong> mechanisms using <em>PyTorch</em> to enable model training without exposing raw patient data — applied to a medical imaging classification task</li>
+              <li>Collaborated with ISI faculty on publishing-grade research, gaining exposure to rigorous statistical methodology and academic writing</li>
+            </ul>
+            <div class="timeline-tags">
+              <span class="tag">Federated Learning</span>
+              <span class="tag">PyTorch</span>
+              <span class="tag">Differential Privacy</span>
+              <span class="tag">Research</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- IIT Jammu -->
+        <div class="timeline-item" data-animate="timeline">
+          <div class="timeline-dot"><div class="timeline-dot-inner"></div></div>
+          <div class="timeline-card">
+            <div class="timeline-card-header">
+              <div>
+                <span class="timeline-date">Jun — Jul 2024</span>
+                <h3 class="timeline-role">Data Science Research Intern</h3>
+                <span class="timeline-company">IIT Jammu</span>
+              </div>
+              <div class="timeline-card-badge research">Research</div>
+            </div>
+            <ul class="timeline-details">
+              <li>Built a <strong>diabetes prediction model</strong> using ensemble ML — combining <em>XGBoost</em> and <em>Random Forest</em> on clinical parameters (BMI, insulin levels, glucose, blood pressure), achieving <strong>94% accuracy</strong> on patient classification</li>
+              <li>Engineered features from raw clinical data — insulin ratios, glucose spikes, BMI categories — and applied statistical feature selection to identify the most predictive biomarkers</li>
+              <li>Leveraged domain knowledge from Biotechnology coursework to design medically meaningful feature sets — a direct application of the Biotech-to-AI pipeline</li>
+            </ul>
+            <div class="timeline-tags">
+              <span class="tag">XGBoost</span>
+              <span class="tag">Scikit-learn</span>
+              <span class="tag">Feature Engineering</span>
+              <span class="tag">Biostatistics</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ PROJECTS ═══ -->
+  <section id="projects" class="section">
+    <div class="section-container">
+      <div class="section-label" data-animate="reveal">
+        <span class="section-label-number">03</span>
+        <span class="section-label-line"></span>
+        <span class="section-label-text">Projects</span>
+      </div>
+      <h2 class="section-heading" data-animate="reveal">
+        Selected <span class="text-accent">builds</span>
+      </h2>
+
+      <div class="projects-grid">
+
+        <!-- Card 1 — featured (span 7) -->
+        <div class="project-card" data-animate="project">
+          <div class="project-card-glow"></div>
+          <div class="project-card-content">
+            <div class="project-card-header">
+              <span class="project-type">Full-Stack Platform</span>
+              <div class="project-links">
+                <a href="https://github.com/yoshika02" target="_blank" class="project-link" title="GitHub">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                </a>
+                <a href="https://neetprep.in" target="_blank" class="project-link" title="Live Demo">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-title">A/B Testing Platform</h3>
+            <div class="project-impact">Serves 100K+ learner sessions · Real-time variant experiments · Measurable CTR uplift on topper cards</div>
+            <p class="project-desc">Real-time experimentation engine on <strong>Cloudflare Workers</strong> — variant management, visitor fingerprinting, and a React analytics dashboard. Zero-latency edge execution with <strong>KV Storage</strong> for experiment state.</p>
+            <div class="project-tags">
+              <span class="tag">Cloudflare Workers</span><span class="tag">React</span>
+              <span class="tag">D1 Database</span><span class="tag">KV Storage</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 (span 5) -->
+        <div class="project-card" data-animate="project">
+          <div class="project-card-glow"></div>
+          <div class="project-card-content">
+            <div class="project-card-header">
+              <span class="project-type">AI / NLP System</span>
+              <div class="project-links">
+                <a href="https://github.com/yoshika02" target="_blank" class="project-link" title="GitHub">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-title">Reddit AI Persona Engine</h3>
+            <div class="project-impact">8 personas · Zero manual moderation · Organic Hinglish engagement at scale</div>
+            <p class="project-desc">Deployed <strong>8 distinct AI personas</strong> across NEET subreddits using Gemini API with context-aware system prompts, persona memory, and automated post/comment scheduling.</p>
+            <div class="project-tags">
+              <span class="tag">Gemini API</span><span class="tag">Python</span><span class="tag">Reddit API</span><span class="tag">NLP</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 (span 4) -->
+        <div class="project-card" data-animate="project">
+          <div class="project-card-glow"></div>
+          <div class="project-card-content">
+            <div class="project-card-header">
+              <span class="project-type">Data Pipeline / ETL</span>
+              <div class="project-links">
+                <a href="https://github.com/yoshika02" target="_blank" class="project-link" title="GitHub">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-title">CleverTap ETL Pipeline</h3>
+            <div class="project-impact">100K+ records · 2 weeks → 4 hours · Fully automated</div>
+            <p class="project-desc">Automated HubSpot → CleverTap migration with deduplication, profile enrichment, and batch API ingestion.</p>
+            <div class="project-tags">
+              <span class="tag">Python</span><span class="tag">CleverTap API</span><span class="tag">ETL</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 (span 4) -->
+        <div class="project-card" data-animate="project">
+          <div class="project-card-glow"></div>
+          <div class="project-card-content">
+            <div class="project-card-header">
+              <span class="project-type">Bot Development</span>
+              <div class="project-links">
+                <a href="https://github.com/yoshika02" target="_blank" class="project-link" title="GitHub">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-title">Telegram Referral Bot</h3>
+            <div class="project-impact">Full referral funnel automation · PDF gating · Admin analytics</div>
+            <p class="project-desc">Referral tracking, tiered rewards, PDF access control, and CSV exports. Grows the NEETprep learner base on autopilot.</p>
+            <div class="project-tags">
+              <span class="tag">Python</span><span class="tag">Telegram API</span><span class="tag">SQLite</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 5 (span 4) -->
+        <div class="project-card" data-animate="project">
+          <div class="project-card-glow"></div>
+          <div class="project-card-content">
+            <div class="project-card-header">
+              <span class="project-type">ML Research</span>
+              <div class="project-links">
+                <a href="https://github.com/yoshika02" target="_blank" class="project-link" title="GitHub">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-title">Diabetes Prediction Model</h3>
+            <div class="project-impact">94% accuracy · Ensemble ML · IIT Jammu research</div>
+            <p class="project-desc">Predicts diabetes onset from clinical parameters (BMI, insulin %, glucose, blood pressure spikes) using XGBoost + Random Forest ensemble with engineered biomarker features.</p>
+            <div class="project-tags">
+              <span class="tag">XGBoost</span><span class="tag">Scikit-learn</span><span class="tag">Feature Engineering</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 6 (span 12, wide) -->
+        <div class="project-card" data-animate="project" style="grid-column:span 12; display:grid; grid-template-columns:1fr 1fr;">
+          <div class="project-card-glow"></div>
+          <div class="project-card-content">
+            <div class="project-card-header">
+              <span class="project-type">Hotel Management · Full-Stack</span>
+              <div class="project-links">
+                <a href="https://github.com/yoshika02" target="_blank" class="project-link" title="GitHub">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-title">Hotel Booking Backend</h3>
+            <p class="project-desc">REST API on <strong>Cloudflare Workers</strong> backed by <strong>Supabase PostgreSQL</strong> with JWT auth, room availability logic, and booking management. Deployed globally at the edge.</p>
+            <div class="project-tags">
+              <span class="tag">Cloudflare Workers</span><span class="tag">Supabase</span><span class="tag">PostgreSQL</span><span class="tag">JWT</span>
+            </div>
+          </div>
+          <div class="project-card-side">
+            <div style="font-family:var(--font-mono); font-size:0.75rem; color:var(--text-muted); line-height:2;">
+              <span style="color:var(--accent)">GET</span>  /api/rooms<br/>
+              <span style="color:var(--accent)">POST</span> /api/bookings<br/>
+              <span style="color:var(--accent)">PUT</span>  /api/bookings/:id<br/>
+              <span style="color:var(--text-muted)">// JWT authenticated</span><br/>
+              <span style="color:var(--text-muted)">// Edge deployed · Global</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ SKILLS ═══ -->
+  <section id="skills" class="section">
+    <div class="section-container">
+      <div class="section-label" data-animate="reveal">
+        <span class="section-label-number">04</span>
+        <span class="section-label-line"></span>
+        <span class="section-label-text">Skills</span>
+      </div>
+      <h2 class="section-heading" data-animate="reveal">
+        Tech <span class="text-accent">arsenal</span>
+      </h2>
+      <div class="skills-grid" data-animate="reveal">
+        <div class="skill-category">
+          <div class="skill-category-title">Languages &amp; Core</div>
+          <div class="skill-orbs">
+            <span class="skill-orb">Python</span><span class="skill-orb">SQL</span>
+            <span class="skill-orb">JavaScript</span><span class="skill-orb">C</span>
+            <span class="skill-orb">R</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <div class="skill-category-title">Machine Learning</div>
+          <div class="skill-orbs">
+            <span class="skill-orb skill-orb--accent">TensorFlow</span>
+            <span class="skill-orb skill-orb--accent">PyTorch</span>
+            <span class="skill-orb skill-orb--accent">Scikit-learn</span>
+            <span class="skill-orb skill-orb--accent">XGBoost</span>
+            <span class="skill-orb skill-orb--accent">Keras</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <div class="skill-category-title">Cloud &amp; Web</div>
+          <div class="skill-orbs">
+            <span class="skill-orb skill-orb--secondary">Cloudflare Workers</span>
+            <span class="skill-orb skill-orb--secondary">Next.js</span>
+            <span class="skill-orb skill-orb--secondary">Supabase</span>
+            <span class="skill-orb skill-orb--secondary">PostgreSQL</span>
+            <span class="skill-orb skill-orb--secondary">Node.js</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <div class="skill-category-title">Data &amp; Analytics</div>
+          <div class="skill-orbs">
+            <span class="skill-orb skill-orb--tertiary">Tableau</span>
+            <span class="skill-orb skill-orb--tertiary">Power BI</span>
+            <span class="skill-orb skill-orb--tertiary">Pandas</span>
+            <span class="skill-orb skill-orb--tertiary">NumPy</span>
+            <span class="skill-orb skill-orb--tertiary">Git</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ LEADERSHIP ═══ -->
+  <section id="leadership" class="section">
+    <div class="section-container">
+      <div class="section-label" data-animate="reveal">
+        <span class="section-label-number">05</span>
+        <span class="section-label-line"></span>
+        <span class="section-label-text">Leadership</span>
+      </div>
+      <h2 class="section-heading" data-animate="reveal">
+        Beyond <span class="text-accent">the terminal</span>
+      </h2>
+      <div class="leadership-cards" data-animate="reveal">
+        <div class="leadership-card">
+          <div class="leadership-icon">Alumni Network</div>
+          <h3 class="leadership-title">Student Alumni Club</h3>
+          <p class="leadership-role">Core Member · NIT Jalandhar</p>
+          <p class="leadership-desc">Orchestrated mentorship sessions connecting 500+ current students with industry alumni. Pioneered structured mock-interview programs and curated a career resources repository adopted college-wide.</p>
+        </div>
+        <div class="leadership-card">
+          <div class="leadership-icon">Creative Arts</div>
+          <h3 class="leadership-title">Kalakaar Club</h3>
+          <p class="leadership-role">PR Head · NIT Jalandhar</p>
+          <p class="leadership-desc">Managed public relations and digital outreach for the institute's creative arts society — growing social media reach by 3× through strategic content campaigns and cross-club collaborations.</p>
+        </div>
+        <div class="leadership-card">
+          <div class="leadership-icon">Tech Festival</div>
+          <h3 class="leadership-title">Nakshatra '24</h3>
+          <p class="leadership-role">Honorary Member</p>
+          <p class="leadership-desc">Recognised for outstanding contributions to the annual technical festival — coordinated cross-functional teams, managed event logistics for 1000+ attendees, and drove sponsorship outreach.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ LIVE METRICS + TESTIMONIAL ═══ -->
+  <section id="live-metrics" class="section">
+    <div class="section-container">
+      <div class="section-label" data-animate="reveal">
+        <span class="section-label-number">06</span>
+        <span class="section-label-line"></span>
+        <span class="section-label-text">Live Systems</span>
+      </div>
+      <h2 class="section-heading" data-animate="reveal">
+        Built to handle <span class="text-accent">production scale</span>
+      </h2>
+
+      <div class="live-dashboard" data-animate="reveal">
+        <div class="live-counter-panel">
+          <div class="live-counter-header">
+            <span class="live-counter-dot"></span>
+            <span class="live-counter-label">SYSTEM THROUGHPUT — LIVE SIMULATION</span>
+          </div>
+          <div class="live-counters">
+            <div class="live-counter">
+              <span class="live-counter-value" id="counter-events">0</span>
+              <span class="live-counter-unit">events / min</span>
+            </div>
+            <div class="live-counter">
+              <span class="live-counter-value" id="counter-api">0</span>
+              <span class="live-counter-unit">API calls today</span>
+            </div>
+            <div class="live-counter">
+              <span class="live-counter-value" id="counter-uptime">99.97</span>
+              <span class="live-counter-unit">% uptime</span>
+            </div>
+          </div>
+          <div class="live-bar-container">
+            <div class="live-bar" id="live-bar"></div>
+          </div>
+        </div>
+
+        <div class="testimonial-panel">
+          <div class="testimonial-quote">
+            <svg class="testimonial-icon" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" opacity="0.3"><path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"/></svg>
+            <p class="testimonial-text">Yoshika single-handedly automated our entire settlement reconciliation pipeline — what used to take our accounts team an entire day now runs in minutes. The CleverTap migration saved us weeks. His A/B testing platform is now core infrastructure at NEETprep.</p>
+            <div class="testimonial-author">
+              <div class="testimonial-author-info">
+                <span class="testimonial-author-name">Engineering Lead</span>
+                <span class="testimonial-author-role">NEETprep · New Delhi</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ PERSONA CHAT DEMO ═══ -->
+  <section id="persona-demo" class="section">
+    <div class="section-container">
+      <div class="section-label" data-animate="reveal">
+        <span class="section-label-number">07</span>
+        <span class="section-label-line"></span>
+        <span class="section-label-text">AI Demo</span>
+      </div>
+      <h2 class="section-heading" data-animate="reveal">
+        Chat with a <span class="text-accent">Hinglish AI Persona</span>
+      </h2>
+      <p class="persona-subtitle" data-animate="reveal">I built 8 AI personas for NEETprep's Reddit community engagement. Try asking a NEET biology doubt below — the persona responds in natural Hinglish, just like a real student peer.</p>
+
+      <div class="persona-chat-container" data-animate="reveal">
+        <div class="persona-chat-header">
+          <div class="persona-chat-avatar">BD</div>
+          <div>
+            <span class="persona-chat-name">BioWaliDidi</span>
+            <span class="persona-chat-status">· AI Persona · Lucknow</span>
+          </div>
+          <span class="persona-chat-badge">DEMO</span>
+        </div>
+        <div class="persona-chat-messages" id="persona-messages">
+          <div class="persona-msg persona-msg--bot">
+            <span>Hey! 👋 Main BioWaliDidi hoon. NEET biology mein koi bhi doubt ho toh pooch lo — mitochondria se lekar genetics tak, sab cover karenge! 🧬</span>
+          </div>
+        </div>
+        <div class="persona-chat-input">
+          <input type="text" id="persona-input" placeholder="Ask a NEET biology doubt..." autocomplete="off" />
+          <button id="persona-send" type="button">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ CONTACT ═══ -->
+  <section id="contact" class="section section--contact">
+    <div class="section-container">
+      <div class="contact-content">
+        <div class="section-label" data-animate="reveal">
+          <span class="section-label-number">08</span>
+          <span class="section-label-line"></span>
+          <span class="section-label-text">Contact</span>
+        </div>
+        <h2 class="contact-heading" data-animate="reveal">
+          Let's build<br/><span class="text-accent">something great.</span>
+        </h2>
+        <p class="contact-subtext" data-animate="reveal">
+          Open to full-time roles in AI/ML Engineering, Data Engineering, and Full-Stack Development. Let's connect.
+        </p>
+        <div class="contact-links" data-animate="reveal">
+          <a href="mailto:yoshikaverma815@gmail.com" class="contact-link contact-link--primary" id="contact-email">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            yoshikaverma815@gmail.com
+          </a>
+          <a href="tel:+919780910223" class="contact-link" id="contact-phone">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            +91 9780910223
+          </a>
+          <a href="https://github.com/yoshika02" target="_blank" class="contact-link" id="contact-github">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            github.com/yoshika02
+          </a>
+          <a href="https://linkedin.com/in/yoshikaverma" target="_blank" class="contact-link" id="contact-linkedin">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            LinkedIn Profile
+          </a>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <p class="footer-text">Designed &amp; Engineered by Yoshika Verma · 2026</p>
+    </footer>
+  </section>
+
+  <script src="./main.js"></script>
+</body>
+</html>
