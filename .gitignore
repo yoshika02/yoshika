@@ -1,0 +1,7 @@
+# Ignore node_modules and unwanted files
+node_modules/
+*.log
+.DS_Store
+.env
+# Add unwanted files below
+public/test.txt
