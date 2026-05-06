@@ -24,6 +24,7 @@ export const metadata: Metadata = {
   title: 'Yoshika Verma — AI & Data Engineer',
   description:
     'Portfolio of Yoshika Verma — AI & Data Engineering specialist. Building intelligent systems with Python, ML, and cloud technologies.',
+  viewport: 'width=device-width, initial-scale=1, maximum-scale=5',
 };
 
 export default function RootLayout({
