@@ -14,14 +14,14 @@ const responses: Record<string, string> = {
   evolution: 'Evolution ka basic concept: Natural selection 🧬 Variation, inheritance, selection — yeh teeno mil ke evolution create karte hain. Lamarck ka theory galat hai. Darwin ka Natural Selection theek hai. Speciation mein reproductive isolation zaroori hai.',
   ecology: 'Ecology = organisms + environment ke beech interaction 🌍 Food chain, food web, energy flow (10% rule), nutrient cycling. Population dynamics — natality, mortality, immigration, emigration. Community structure aur succession.',
   reproduction: 'Human reproduction: Gametogenesis (meiosis), fertilization, aur embryonic development 🤰 Spermatogenesis mein 4 haploid sperm bante hain. Oogenesis mein 1 ovum aur 3 polar bodies. Menstrual cycle 28 days — follicular (days 1-14), luteal (days 15-28).',
-  
+
   // General NEET Questions
   neet: 'NEET 2027 ki prep? Toh listen! 📚 Daily 4-5 ghante consistent padho. NCERT ko ek-ek line dhyan se read karo — 90% questions NCERT se hi aate hain. Previous year papers solve karo. Mock tests regular lo. Revision schedule banao.',
   exam: 'Exam strategy: Mock tests mein time manage karo — 3 hours mein 180 questions! ⏱️ Biology → Chemistry → Physics order mein karo (ya jo comfortable ho). Negative marking hai 1 mark, toh unsure questions mein risk mat lo. Calculation questions ko aakhir mein kar dena.',
   study: 'Study tips: 📖 NCERT padhna compulsory hai. Diagrams banao aur label karo — visual memory strong hoti hai. Revise regularly — spaced repetition best method hai. Group study mein time waste ho jata hai, solo padhna better. Consistency > Intensity!',
   doubt: 'Koi doubt ho toh pooch lo! 🙋‍♀️ Biology ke kisi bhi topic mein confused ho toh explain karo — mitochondria, genes, cells, organs kuch bhi. Simple terms mein explain karungi. Questions ke answers bhi de sakti hoon!',
   motivation: 'Tum kar loge! 💪 Haan, NEET tough hai, lekin millions prepare kar rahe hain — tum bhi kar sakte ho! Consistency banao, dedication karo. Difficult topics ko break down karo — choti-choti steps mein. Every day small progress = big results! Believe in yourself! 🌟',
-  
+
   // Greetings
   hello: 'Hey! 😄 Kaise ho? Main BioWaliDidi hoon. Biology ke doubts, NEET prep tips, ya motivational speech — kuch bhi pooch sakte ho! Mitochondria se lekar evolution tak, sab cover kar lunga. Bol, kya poochna hai? 🧬',
   hi: 'Hii! 👋 Welcome! Main yahan biology ke sab topics explain karne ke liye ready hoon. NEET ka student ho toh bilkul right place! Koi specific topic poochna hai ya general guidance chahiye? 💯',
@@ -29,32 +29,32 @@ const responses: Record<string, string> = {
 
 function getResponse(msg: string): string {
   const lower = msg.toLowerCase().trim();
-  
+
   // Exact keyword matching (higher priority)
   for (const [key, resp] of Object.entries(responses)) {
     if (lower.includes(key)) return resp;
   }
-  
+
   // Greeting variations
   if (/\b(hello|hi|hey|hii|yo|sup|namaste)\b/i.test(lower))
     return responses.hello;
-  
+
   // NEET/Exam variations
   if (/\b(neet|exam|board|competitive|score|rank)\b/i.test(lower))
     return responses.exam;
-  
+
   // Study variations
   if (/\b(study|padhna|prepare|revision|notes|tips)\b/i.test(lower))
     return responses.study;
-  
+
   // Doubt/Help variations
   if (/\b(doubt|question|help|confused|samajh|explain|kya hai)\b/i.test(lower))
     return responses.doubt;
-  
+
   // Motivation variations
   if (/\b(motivation|confidence|scared|nervous|difficult|hard|heavy)\b/i.test(lower))
     return responses.motivation;
-  
+
   // Default response
   const defaultResponses = [
     'Achha sawaal hai! 🤔 Yeh topic NEET biology mein important hai. Kya tum isko detail mein samajhna chahte ho? Specific part batao — cellular level se organize, organisms tak, ya broader concept?',
@@ -84,12 +84,12 @@ export default function PersonaChat() {
   function handleSend() {
     const msg = input.trim();
     if (!msg) return;
-    
+
     setMessages(prev => [...prev, { text: msg, isUser: true }]);
     setInput('');
     setCharacterCount(0);
     setTyping(true);
-    
+
     // Simulate typing delay
     const delay = 600 + Math.random() * 1000;
     setTimeout(() => {
@@ -131,28 +131,28 @@ export default function PersonaChat() {
             )}
           </div>
           <div className="persona-chat-input">
-            <input 
+            <input
               ref={inputRef}
-              type="text" 
-              value={input} 
+              type="text"
+              value={input}
               onChange={e => {
                 setInput(e.target.value);
                 setCharacterCount(e.target.value.length);
               }}
-              onKeyDown={e => e.key === 'Enter' && handleSend()} 
-              placeholder="Ask about photosynthesis, genetics, or NEET tips..." 
+              onKeyDown={e => e.key === 'Enter' && handleSend()}
+              placeholder="Ask about photosynthesis, genetics, or NEET tips..."
               autoComplete="off"
               maxLength={500}
             />
-            <button 
-              type="button" 
+            <button
+              type="button"
               onClick={handleSend}
               disabled={!input.trim()}
               className={!input.trim() ? 'disabled' : ''}
             >
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                <line x1="22" y1="2" x2="11" y2="13"/>
-                <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+                <line x1="22" y1="2" x2="11" y2="13" />
+                <polygon points="22 2 15 22 11 13 2 9 22 2" />
               </svg>
             </button>
           </div>
